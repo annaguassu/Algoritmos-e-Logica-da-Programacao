@@ -24,20 +24,27 @@ for(i=0;i<6;++i)
 	}
 }
 
+   printf("\nOs números pares são: \n");
+   
 for(i=0;i<6;++i)
 {
 	if((vetor[i] % 2)==0)
 	{
-	    printf("\nOs números pares são: ");
-	    printf("\nNúmero %d na posição %d\n", vetor[i], i);
-	}
-	else 
-	{
-	    printf("\nOs números ímpares são: ");
-	    printf("\nNúmero %d na posição %d\n", vetor[i], i);
+	    printf("\nNúmero %d na posição %d", vetor[i], i);
 	}
 }
-printf("\nA soma dos numeros pares é: %d\n",somapar); 
-printf("\nQuantidade de ímpares: %d\n",icontimpar);
+
+   printf("\n\nOs números ímpares são: \n");
+   
+for(i=0;i<6;++i)
+{
+    if((vetor[i] % 2)==1)
+	{
+	    printf("\nNúmero %d na posição %d", vetor[i], i);
+	}
+}
+printf("\n\nA soma dos numeros pares é: %d\n",somapar); 
+printf("\n\nQuantidade de ímpares: %d\n",icontimpar);
 return 0;
 }
+
