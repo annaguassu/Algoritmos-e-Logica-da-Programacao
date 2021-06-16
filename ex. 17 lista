@@ -1,0 +1,43 @@
+#include <stdio.h>
+int main ()
+{
+    /*Faça um programa que receba seis números inteiros e mostre:
+■ os números pares digitados;
+■ a soma dos números pares digitados;
+■ os números ímpares digitados; e
+■ a quantidade de números ímpares digitados.*/
+
+int vetor[6],i,icontpar=0,somapar=0, icontimpar=0, somaimpar=0;	 
+
+for(i=0;i<6;++i)
+{
+	printf("Digite a %d posicao: ",i);
+	scanf("%d",&vetor[i]);
+	
+	if((vetor[i] % 2)==0)
+	{
+		somapar += vetor[i];
+	}
+	else 
+	{
+	    icontimpar++;
+	}
+}
+
+for(i=0;i<6;++i)
+{
+	if((vetor[i] % 2)==0)
+	{
+	    printf("\nOs números pares são: ");
+	    printf("\nNúmero %d na posição %d\n", vetor[i], i);
+	}
+	else 
+	{
+	    printf("\nOs números ímpares são: ");
+	    printf("\nNúmero %d na posição %d\n", vetor[i], i);
+	}
+}
+printf("\nA soma dos numeros pares é: %d\n",somapar); 
+printf("\nQuantidade de ímpares: %d\n",icontimpar);
+return 0;
+}
