@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+using namespace std;
+
+int main() {
+
+	int i, num;
+	
+	printf("\nInforme um numero: ");
+	scanf("%d%*c",&num);
+
+	int f = 1;
+
+	for (i=1; i<=num; i++) {
+		f = f * i;
+	}
+
+	printf("\nO fatorial de %d eh: %d ", num, f);
+
+	return 0;
+} 
